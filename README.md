@@ -1,4 +1,4 @@
-**Healthcare System Using Prompt Engineering **
+# **Healthcare System Using Prompt Engineering **
 
 ## Overview 
 Healthcare System using prompt engineering assistant powered by AI, designed to help users check their symptoms, receive possible diagnoses, and get medication suggestions based on their input. It also allows users to upload medical reports (PDFs, images, or CSVs) for further analysis.
