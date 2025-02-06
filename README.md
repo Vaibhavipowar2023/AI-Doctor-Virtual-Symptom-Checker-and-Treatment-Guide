@@ -1,13 +1,14 @@
-# AI Doctor: Virtual Symptom Checker and Treatment Guide
+
+# **AI Doctor: Virtual Symptom Checker and Treatment Guide**
 
 ## Overview
-AI Doctor is a virtual healthcare assistant powered by AI, designed to help users check their symptoms, receive possible diagnoses, and get medication suggestions based on their input. It also allows users to upload medical reports (PDFs, images, or CSV files) for further analysis. This project uses Generative AI, natural language processing, and OCR technologies to offer an interactive and user-friendly healthcare experience.
+AI Doctor is a virtual healthcare assistant powered by AI, designed to help users check their symptoms, receive possible diagnoses, and get medication suggestions based on their input. It also allows users to upload medical reports (PDFs, images, or CSVs) for further analysis.
 
 ## Features
-- **Symptom Checker**: Users can describe their symptoms and get a list of possible medical conditions, along with follow-up questions for better understanding.
-- **Medication Suggestions**: Based on the diagnosis, the system suggests relevant medications and treatments.
-- **Medical Report Analysis**: Users can upload medical reports in PDF, image, or CSV formats for diagnosis and recommendations.
-- **Interactive Conversations**: The system engages users in a friendly, empathetic tone, adding emojis and highlighting key points for better understanding.
+- **Symptom Checker**: Provides possible diagnoses based on user-provided symptoms.
+- **Medication Suggestions**: Suggests medications and treatments based on the diagnosis.
+- **Report Analysis**: Extracts and analyzes text from uploaded medical reports (PDF, image, or CSV).
+- **Interactive Follow-Up**: Engages users with follow-up questions to gather more information about their symptoms.
 
 ## Technologies Used
 - **Google Generative AI (Gemini-1.5-Pro)**: For generating responses and providing diagnosis and treatment suggestions.
@@ -17,30 +18,95 @@ AI Doctor is a virtual healthcare assistant powered by AI, designed to help user
 - **Python**: The main programming language for the project.
 
 ## Installation
+To run this project, you need to install the following libraries:
+```bash
+!pip install google-generativeai
+!pip install PyPDF2
+!pip install pytesseract
+```
 
-### Requirements
-- Python 3.x
-- Google Cloud API key for Generative AI (Gemini-1.5-Pro)
-- Tesseract installed for OCR
+Additionally, you need to install Tesseract OCR software:
+```bash
+!apt-get install tesseract-ocr
+```
 
-### Steps to Install
-1. Clone the repository to your local machine.
+## Usage
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/Vaibhavipowar2023/AI-Doctor-Virtual-Symptom-Checker-and-Treatment-Guide.git
+    cd AI-Doctor-Virtual-Symptom-Checker-and-Treatment-Guide
+    ```
 
-   ```bash
-   git clone https://github.com/yourusername/AI-Doctor.git
-   cd AI-Doctor
+2. **Open the Jupyter Notebook**:
+    Open `Healthcare_system (1).ipynb` in Jupyter Notebook or Google Colab.
 
-## How to Use
-1. **Symptom Checker:**
-    * Start the program and describe your symptoms (e.g., fever, cough, sore throat).
-    * The AI will suggest possible medical conditions and follow-up questions.
+3. **Run the Cells**:
+    Execute each cell in the notebook to install dependencies and run the code.
 
-2. **Medication Suggestions:**
-    * Based on the diagnosis, the AI will recommend medications and lifestyle changes.
+4. **Interacting with AI Doctor**:
+    - Describe your symptoms when prompted.
+    - Upload any medical reports for further analysis.
+    - Follow the interactive session to get possible diagnoses and treatment suggestions.
 
-3. **Upload Medical Report:**
-    * Upload a PDF, image, or CSV file of your medical report.**
-    * The system will extract data and provide an analysis of the report.
+## Code Structure
+- **Installation Cells**: Install necessary libraries and software.
+- **Import Cells**: Import required libraries.
+- **Function Definitions**: Define functions for symptom checking, medication prescription, report analysis, and follow-up questions.
+- **Main Function**: `run_healthcare_system()` drives the workflow, interacting with the user and providing responses based on AI model outputs.
 
-4. **Ask Follow-up Questions:**
-    * You can ask the AI follow-up questions, and it will provide more detailed information or recommendations.
+## Functions
+### Symptom Checker
+```python
+def symptom_checker(symptoms_input):
+    # Interacts with the user to suggest possible diagnoses
+```
+
+### Medication Prescription
+```python
+def prescribe_medication(diagnosis):
+    # Suggests medications and treatments based on diagnosis
+```
+
+### Report Analysis
+#### PDF Text Extraction
+```python
+def extract_pdf_text(file_path):
+    # Extracts text from PDF files
+```
+#### Image Text Extraction
+```python
+def extract_image_text(file_path):
+    # Extracts text from image files using OCR
+```
+#### CSV Data Extraction
+```python
+def extract_csv_data(file_path):
+    # Extracts data from CSV files using pandas
+```
+
+### Follow-Up Questions
+```python
+def ask_follow_up():
+    # Engages the user with follow-up questions
+```
+
+### File Upload Simulation
+```python
+def upload_report():
+    # Simulates the file upload process
+```
+
+## Running the System
+To start the healthcare system, run the `run_healthcare_system()` function:
+```python
+if __name__ == "__main__":
+    run_healthcare_system()
+```
+
+## Notes
+- Ensure that Tesseract OCR is properly installed and configured for text extraction from images.
+- This project uses Google's generative AI model (genai) for generating responses. Make sure to configure the API key correctly.
+
+## Disclaimer
+This project is for educational purposes only and does not provide medical advice. Always consult a healthcare professional for medical concerns.
+
