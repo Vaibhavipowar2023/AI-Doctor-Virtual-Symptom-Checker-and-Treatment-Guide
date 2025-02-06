@@ -1,8 +1,7 @@
+**Healthcare System Using Prompt Engineering **
 
-# **AI Doctor: Virtual Symptom Checker and Treatment Guide**
-
-## Overview
-AI Doctor is a virtual healthcare assistant powered by AI, designed to help users check their symptoms, receive possible diagnoses, and get medication suggestions based on their input. It also allows users to upload medical reports (PDFs, images, or CSVs) for further analysis.
+## Overview 
+Healthcare System using prompt engineering assistant powered by AI, designed to help users check their symptoms, receive possible diagnoses, and get medication suggestions based on their input. It also allows users to upload medical reports (PDFs, images, or CSVs) for further analysis.
 
 ## Features
 - **Symptom Checker**: Provides possible diagnoses based on user-provided symptoms.
